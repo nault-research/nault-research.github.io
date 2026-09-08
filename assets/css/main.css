@@ -1,0 +1,225 @@
+/* Link styles */
+a:link, a:visited {
+    color: green;
+    text-decoration: underline; /* Add underline if desired */
+}
+
+/* Use Flexbox to structure the page */
+html, body {
+  height: 100%; /* Ensure the body takes up at least the full height of the viewport */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Makes the content and footer stack vertically */
+}
+
+/* The content will grow to fill space and push the footer down if necessary */
+.content {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  flex: 1; /* Keep this to ensure it grows to fill available space */
+  display: block; /* Ensure it's not affected by flexbox rules */
+}
+/* Optional: Change color on hover */
+a:hover, a:active {
+    color: darkgreen;
+}
+
+.code-container {
+  position: relative;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+pre {
+  position: relative; /* Ensure positioning for the copy button */
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 15px; /* Add some padding inside the code block */
+  border-radius: 5px; /* Optional: rounded corners */
+  border: 1px solid #e0e0e0; /* Subtle border */
+  overflow: auto; /* Ensure long code lines are scrollable */
+  margin-bottom: 20px; /* Add some space between code blocks and content */
+}
+
+code {
+  font-family: monospace; /* Ensure monospace font for code */
+  color: #333; /* Slightly darker text for better contrast */
+  white-space: pre-wrap; /* Keep text wrapping inside the box */
+}
+
+/* Footer styles */
+footer {
+  background-color: #18453B; /* MSU dark green or your navbar color */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  flex-shrink: 0; /* Ensures the footer doesn't shrink */
+  position: relative; /* Ensure it stays at the bottom after content */
+}
+
+.footer-content {
+  font-size: 14px;
+}
+
+/* Post styles */
+.post-meta {
+  text-align: center;  /* Centers the text */
+  color: #666;         /* Light gray text */
+  margin-top: 30px;    /* Adds space above the publication details */
+  margin-bottom: 20px; /* Adds space below the publication details */
+  font-size: 14px;     /* Sets the font size */
+  font-style: italic;  /* Italicize the text */
+}
+
+.post-meta i {
+  margin-right: 5px;  /* Adds space between the icon and text */
+}
+
+/* Resources page styles */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.resource-item {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.resource-item a {
+  color: #F2F2F2 !important; /* Override default link color with white */
+  text-decoration: none; /*Remove underline for cleaner look */
+}
+
+.resource-item a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover for clarity */
+}
+
+.resource-item:hover {
+  transform: scale(1.05);
+}
+
+/* Tools to try styles */
+.tool-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin: 0 0 25px;
+}
+
+.tool-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #D8E2DE;
+  border-left: 5px solid #18453B;
+  border-radius: 8px;
+  background: #F7FAF8;
+  box-shadow: 0 3px 10px rgba(24, 69, 59, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 16px rgba(24, 69, 59, 0.15);
+}
+
+.tool-card-icon {
+  display: grid;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 50%;
+  background: #18453B;
+  color: #FFFFFF;
+}
+
+.tool-card h3 {
+  margin: 0 0 6px;
+  color: #18453B;
+  font-size: 1.05rem;
+}
+
+.tool-card p {
+  margin: 0;
+  color: #3F4D48;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .tool-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Michigan State-inspired color backgrounds */
+.green-background {
+  background-color: #28a745; /* Green */
+}
+
+.spartan-green {
+  background-color: #18453B; /* Primary Spartan Green */
+}
+
+.dark-green {
+  background-color: #003C1C; /* Dark Green */
+}
+
+.secondary-green {
+  background-color: #114B5F; /* Secondary Darker Green */
+}
+
+.forest-green {
+  background-color: #2A6041; /* Forest Green */
+}
+
+.pine-green {
+  background-color: #1E5631; /* Pine Green */
+}
+
+.olive-green {
+  background-color: #556B2F; /* Olive Green */
+}
+
+.muted-green {
+  background-color: #A2AD00; /* Muted Green */
+}
+
+.mint-green {
+  background-color: #98C1A2; /* Mint Green */
+  color: #18453B; /* Spartan Green text for contrast */
+}
+
+.gray {
+  background-color: #5A5A5A; /* Gray */
+}
+
+.silver {
+  background-color: #A8B4A5; /* Silver */
+}
+
+.off-white {
+  background-color: #F2F2F2; /* Off-White */
+  color: #18453B; /* Spartan Green for contrast */
+}
+
