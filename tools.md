@@ -10,19 +10,22 @@ title: Tools
 <div class="resource-grid">
   <div class="resource-item spartan-green">
     <a href="https://msubioinformaticscore.github.io/fetchngs">
-      <p>nf-core/fetchngs v1.12.0</p>
+      <h3>nf-core/fetchngs v1.12.0</h3>
+      <p>Download SRA/GEO data to the HPCC</p>
     </a>
   </div>
 
   <div class="resource-item forest-green">
     <a href="https://msubioinformaticscore.github.io/bulk_rnaseq">
-      <p>nf-core/rnaseq v3.26.0</p>
+      <h3>nf-core/rnaseq v3.26.0</h3>
+      <p>Process bulk RNA-seq data</p>
     </a>
   </div>
 
   <div class="resource-item muted-green">
     <a href="https://msubioinformaticscore.github.io/bulk_rnaseq">
-      <p>nf-core/differentialabundance v1.5.0</p>
+      <h3>nf-core/differentialabundance v1.5.0</h3>
+      <p>Identify differentially expressed genes in bulk/pseudobulk RNA-seq data</p>
     </a>
   </div>
   
