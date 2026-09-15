@@ -7,28 +7,31 @@ title: Tools
 
   <!-- Tools Tested Section -->
 ## <i class="fa fa-database"></i> Tools Tested
-<div class="resource-grid">
-  <div class="resource-item spartan-green">
-    <a href="https://msubioinformaticscore.github.io/fetchngs">
+
+<div class="tool-list">
+  <article class="tool-card">
+    <div class="tool-card-icon"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+    <div>
       <h3>nf-core/fetchngs v1.12.0</h3>
       <p>Download SRA/GEO data to the HPCC</p>
-    </a>
-  </div>
+    </div>
+  </article>
 
-  <div class="resource-item forest-green">
-    <a href="https://msubioinformaticscore.github.io/bulk_rnaseq">
+  <article class="tool-card">
+    <div class="tool-card-icon"><i class="fa fa-align-left" aria-hidden="true"></i></div>
+    <div>
       <h3>nf-core/rnaseq v3.26.0</h3>
       <p>Process bulk RNA-seq data</p>
-    </a>
-  </div>
+    </div>
+  </article>
 
-  <div class="resource-item muted-green">
-    <a href="https://msubioinformaticscore.github.io/bulk_rnaseq">
+  <article class="tool-card">
+    <div class="tool-card-icon"><i class="fa fa-chart-bar" aria-hidden="true"></i></div>
+    <div>
       <h3>nf-core/differentialabundance v1.5.0</h3>
       <p>Identify differentially expressed genes in bulk/pseudobulk RNA-seq data</p>
-    </a>
-  </div>
-  
+    </div>
+  </article>
 </div>
 
   <!-- Tools to Try Section -->
