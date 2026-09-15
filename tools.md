@@ -3,14 +3,14 @@ layout: default
 title: Tools
 ---
 
-# <i class="fa fa-book"></i> Tools
+# <i class="fa fa-wrench" aria-hidden="true"></i> Tools
 
   <!-- Tools Tested Section -->
-## <i class="fa fa-database"></i> Tools Tested
+## <i class="fa fa-flask" aria-hidden="true"></i> Tools Tested
 
 <div class="tool-list">
   <article class="tool-card">
-    <div class="tool-card-icon"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+    <div class="tool-card-icon"><i class="fa fa-book" aria-hidden="true"></i></div>
     <div>
       <h3>nf-core/fetchngs v1.12.0</h3>
       <p>Download SRA/GEO data to the HPCC</p>
@@ -18,7 +18,7 @@ title: Tools
   </article>
 
   <article class="tool-card">
-    <div class="tool-card-icon"><i class="fa fa-align-left" aria-hidden="true"></i></div>
+    <div class="tool-card-icon"><i class="fa fa-code" aria-hidden="true"></i></div>
     <div>
       <h3>nf-core/rnaseq v3.26.0</h3>
       <p>Process bulk RNA-seq data</p>
@@ -35,7 +35,7 @@ title: Tools
 </div>
 
   <!-- Tools to Try Section -->
-## <i class="fa fa-project-diagram"></i> Tools to Try
+## <i class="fa fa-lightbulb" aria-hidden="true"></i> Tools to Try
 <div class="tool-list">
   <article class="tool-card">
     <div class="tool-card-icon"><i class="fa fa-bolt" aria-hidden="true"></i></div>
